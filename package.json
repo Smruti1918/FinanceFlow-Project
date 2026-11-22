@@ -1,16 +1,29 @@
 
 {
-  "name": "financeflow-backend",
+  "name": "financeflow",
   "version": "1.0.0",
-  "description": "Automated Fintech Backend",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
   "dependencies": {
     "better-sqlite3": "^11.3.0",
     "cors": "^2.8.5",
     "express": "^4.21.0",
-    "node-cron": "^3.0.3"
+    "node-cron": "^3.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-  "scripts": {
-    "start": "node server.js"
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0",
+    "typescript": "^5.7.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/node": "^22.10.0"
   }
 }
